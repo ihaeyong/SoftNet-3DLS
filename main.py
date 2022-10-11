@@ -31,7 +31,7 @@ X = np.vstack((x_red, x_blue))
 t = np.vstack((np.zeros((nb_of_samples_per_class,1)), 
                np.ones((nb_of_samples_per_class,1))))
 #
-
+import ipdb; ipdb.set_trace()
 # Plot both classes on the x1, x2 plane
 plt.figure(figsize=(6, 4))
 plt.plot(x_red[:,0], x_red[:,1], 'r*', label='class: red star')
@@ -45,6 +45,8 @@ plt.title('red star vs. blue circle classes in the input space')
 plt.savefig('./plots/sample.pdf', dpi=300, format='pdf', bbox_inches='tight')
 plt.close()
 #
+
+net_type = 'hardnet'
 
 # Plot the loss in function of the weights
 # Define a vector of weights for which we want to plot the loss
@@ -68,7 +70,8 @@ plt.xlabel('$w_1$', fontsize=12)
 plt.ylabel('$w_2$', fontsize=12)
 plt.title('Loss function surface')
 plt.grid()
-plt.savefig('./plots/loss_func_surface.pdf', dpi=300, format='pdf', bbox_inches='tight')
+plt.savefig('./plots/{}_loss_func_surface.pdf'.format(net_type),
+            dpi=300, format='pdf', bbox_inches='tight')
 plt.close()
 #plt.show()
 #
@@ -110,7 +113,8 @@ plt.xlabel('$w_1$', fontsize=12)
 plt.ylabel('$w_2$', fontsize=12)
 plt.title('Gradient descent updates on loss surface')
 #plt.show()
-plt.savefig('./plots/grad_update_on_loss_surface.pdf', dpi=300, format='pdf', bbox_inches='tight')
+plt.savefig('./plots/{}_grad_update_on_loss_surface.pdf'.format(net_type),
+            dpi=300, format='pdf', bbox_inches='tight')
 plt.close()
 #
 
@@ -143,6 +147,7 @@ plt.ylabel('$x_2$', fontsize=12)
 plt.title('red star vs. blue circle classification boundary')
 plt.axis([-3, 4, -4, 4])
 #plt.show()
-plt.savefig('./plots/classification.pdf', dpi=300, format='pdf', bbox_inches='tight')
+plt.savefig('./plots/{}_classification.pdf'.format(net_type),
+            dpi=300, format='pdf', bbox_inches='tight')
 plt.close()
 #
