@@ -1,4 +1,4 @@
-# 3D Loss Landscapes of [SoftNet](https://arxiv.org/abs/2209.07529)-based on [the public code](https://github.com/peterroelants/peterroelants.github.io/blob/main/notebooks/cross_entropy/cross-entropy-logistic.ipynb)
+# 3D Loss Landscapes of [SoftNet](https://arxiv.org/abs/2209.07529)-based on [the public code](https://github.com/peterroelants/peterroelants.github.io/tree/main/notebooks/cross_entropy)
 
 ```
 @article{Kang2022OnTS,
