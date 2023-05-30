@@ -1,12 +1,13 @@
 # 3D Loss Landscapes of [SoftNet](https://openreview.net/forum?id=z57WK5lGeHd)-based on [the public code](https://github.com/peterroelants/peterroelants.github.io/tree/main/notebooks/cross_entropy)
 
 ```
-@article{Kang2022OnTS,
-  title={On the Soft-Subnetwork for Few-shot Class Incremental Learning},
-  author={Haeyong Kang and Jaehong Yoon and Sultan Rizky Hikmawan Madjid and Sung Ju Hwang and Chang D. Yoo},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2209.07529}
+@inproceedings{
+kang2023on,
+title={On the Soft-Subnetwork for Few-Shot Class Incremental Learning},
+author={Haeyong Kang and Jaehong Yoon and Sultan Rizky Hikmawan Madjid and Sung Ju Hwang and Chang D. Yoo},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=z57WK5lGeHd}
 }
 ```
 
